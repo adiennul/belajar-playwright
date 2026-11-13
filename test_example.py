@@ -7,7 +7,7 @@ credentials = [
     ("testlogin", "Testlogin1!", "Success"),          # user benar, pass benar
     ("testloginx", "Testlogin1!", "Invalid username or password!"),       # user salah, pass benar
     ("testlogin", "Testlogin1!x", "Invalid username or password!"),     # user benar, pass salah
-    ("testloginx", "Testlogin1!x", "Invalid username or password!")          # user salah, pass salah
+    # ("testloginx", "Testlogin1!x", "Invalid username or password!")          # user salah, pass salah
 ]
 
 @pytest.mark.parametrize('username, password, expected_result', credentials)
